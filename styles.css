@@ -515,10 +515,11 @@ strong {
     z-index: 2;
 }
 
-.hero-urgency i {
+.hero-urgency i,
+.hero-urgency [data-lucide] {
     flex-shrink: 0;
-    width: 24px;
-    height: 24px;
+    width: 24px !important;
+    height: 24px !important;
     color: white !important;
     fill: none !important;
     stroke: white !important;
@@ -531,9 +532,10 @@ strong {
         gap: 1rem;
     }
     
-    .hero-urgency i {
-        width: 32px;
-        height: 32px;
+    .hero-urgency i,
+    .hero-urgency [data-lucide] {
+        width: 32px !important;
+        height: 32px !important;
         stroke-width: 2 !important;
     }
 }
@@ -1317,11 +1319,18 @@ section h2 {
         text-align: center;
         gap: 1.5rem;
         padding: 2rem;
+        align-items: center;
     }
     
     .highlight-icon {
         width: 70px;
         height: 70px;
+        align-self: center;
+    }
+    
+    .highlight-content {
+        align-self: center;
+        text-align: center;
     }
     
     .highlight-content h3 {
