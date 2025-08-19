@@ -63,8 +63,16 @@
 .hero-badge [data-lucide] {
     color: white !important;
     stroke: white !important;
-    width: 18px !important;
-    height: 18px !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+/* Mobile: ícone maior na badge principal */
+@media (max-width: 767px) {
+    .hero-badge [data-lucide] {
+        width: 40px !important;
+        height: 40px !important;
+    }
 }
 
 .hero-urgency [data-lucide] {
